@@ -1,0 +1,52 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+
+      div#wrapper {
+        width: 14em;
+        text-align: center;
+      }
+
+      input[type="text"]#field {
+        display: inline-block;
+        height: 2em;
+        width: 14em;
+        outline: none;
+      }
+
+      button#copy-btn {
+        display: inline-block;
+        border-radius: 5px;
+        height: 2em;
+        width: 5em;
+        outline: none;
+        background-color: #e4e4e4;
+        border-style: none;
+      }
+
+      button#copy-btn:hover {
+        background-color: #4990E2;
+        color: white;
+      }
+    </style>
+
+    <script src="action.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <input type="text" id="field"></input>
+      <button id="copy-btn">Copy</button>
+    </div>
+  </body>
+</html>
